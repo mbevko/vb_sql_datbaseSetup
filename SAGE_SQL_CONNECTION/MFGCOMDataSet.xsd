@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MFGCOMDataSet" targetNamespace="http://tempuri.org/MFGCOMDataSet.xsd" xmlns:mstns="http://tempuri.org/MFGCOMDataSet.xsd" xmlns="http://tempuri.org/MFGCOMDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MFGCOM_SERVER" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MFGCOM_SERVER (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SAGE_SQL_CONNECTION.My.MySettings.GlobalReference.Default.MFGCOM_SERVER" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SERVER_NAMETableAdapter" GeneratorDataComponentClassName="SERVER_NAMETableAdapter" Name="SERVER_NAME" UserDataComponentName="SERVER_NAMETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MFGCOM_SERVER (MySettings)" DbObjectName="MFGCOM.dbo.SERVER_NAME" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Server Name] FROM dbo.SERVER_NAME</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Server Name" DataSetColumn="Server Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MFGCOMDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MFGCOMDataSet" msprop:Generator_UserDSName="MFGCOMDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SERVER_NAME" msprop:Generator_TableClassName="SERVER_NAMEDataTable" msprop:Generator_TableVarName="tableSERVER_NAME" msprop:Generator_TablePropName="SERVER_NAME" msprop:Generator_RowDeletingName="SERVER_NAMERowDeleting" msprop:Generator_RowChangingName="SERVER_NAMERowChanging" msprop:Generator_RowEvHandlerName="SERVER_NAMERowChangeEventHandler" msprop:Generator_RowDeletedName="SERVER_NAMERowDeleted" msprop:Generator_UserTableName="SERVER_NAME" msprop:Generator_RowChangedName="SERVER_NAMERowChanged" msprop:Generator_RowEvArgName="SERVER_NAMERowChangeEvent" msprop:Generator_RowClassName="SERVER_NAMERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Server_x0020_Name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnServer_Name" msprop:Generator_ColumnPropNameInRow="Server_Name" msprop:Generator_ColumnPropNameInTable="Server_NameColumn" msprop:Generator_UserColumnName="Server Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
